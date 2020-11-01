@@ -103,7 +103,7 @@ public class Demo : MonoBehaviour
 
 	public void retrydemo()
 	{
-      UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+      UnityEngine.SceneManagement.SceneManager.LoadScene(8);
 	}
 
 }

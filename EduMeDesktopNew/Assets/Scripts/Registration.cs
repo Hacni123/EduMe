@@ -72,7 +72,7 @@ public class Registration : MonoBehaviour
 
     public void Toggle_Changed(bool newValue)
     {
-         UnityEngine.SceneManagement.SceneManager.LoadScene(5);
+         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
 
     

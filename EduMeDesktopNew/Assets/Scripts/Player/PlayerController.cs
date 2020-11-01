@@ -241,6 +241,30 @@ public class PlayerController : MonoBehaviour
             uIManager.OnLevelQuestion4();  
             SavePlayerData();     
         }
+        else if (target.gameObject.name == "friend11")
+        {
+            Destroy(target.gameObject);
+            uIManager.OnLevelQuestion11();  
+            SavePlayerData();    
+        }
+        else if (target.gameObject.name == "friend22")
+        {
+            Destroy(target.gameObject);
+            uIManager.OnLevelQuestion22();  
+            SavePlayerData();      
+        }
+         else if (target.gameObject.name == "friend33")
+        {
+            Destroy(target.gameObject);
+            uIManager.OnLevelQuestion33();  
+            SavePlayerData();     
+        }
+         else if (target.gameObject.name == "friend44")
+        {
+            Destroy(target.gameObject);
+            uIManager.OnLevelQuestion44();  
+            SavePlayerData();     
+        }
     }
     
 }

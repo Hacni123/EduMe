@@ -17548,7 +17548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e387bb660488574785c57678708fb79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coins_To_Unlocked: 1000
+  Coins_To_Unlocked: 1500
   Next_Level: {fileID: 998496037}
   max_level: 5
   num_level: 
@@ -77652,6 +77652,10 @@ MonoBehaviour:
   questionpanel2panel6: {fileID: 727620773}
   questionpanel2panel7: {fileID: 1446616122}
   questionpanel2panel8: {fileID: 181046404}
+  questionpanel11: {fileID: 0}
+  questionpanel22: {fileID: 0}
+  questionpanel33: {fileID: 0}
+  questionpanel44: {fileID: 0}
   finishpanel1: {fileID: 1502202277}
   exitpanel: {fileID: 1570781836}
 --- !u!1 &1435952644

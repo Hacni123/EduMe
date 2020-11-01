@@ -100,7 +100,7 @@ public class MainMenuUIManager : MonoBehaviour
 
     public void veiwallplayers()
     {
-         UnityEngine.SceneManagement.SceneManager.LoadScene(8);
+         UnityEngine.SceneManagement.SceneManager.LoadScene(9);
     
     }
     

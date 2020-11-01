@@ -10,19 +10,24 @@ public class UIManager : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject levelClearPanel;
     public GameObject questionpanel;
-      public GameObject questionpanel2;
-      public GameObject questionpanel3;
-      public GameObject questionpanel4;
-     public GameObject questionpanel2panel1;
-     public GameObject questionpanel2panel2;
-      public GameObject questionpanel2panel3;
-       public GameObject questionpanel2panel4;
-        public GameObject questionpanel2panel5;
-         public GameObject questionpanel2panel6;
-          public GameObject questionpanel2panel7;
-           public GameObject questionpanel2panel8;
-            public GameObject finishpanel1;
-        public GameObject exitpanel;
+    public GameObject questionpanel2;
+    public GameObject questionpanel3;
+    public GameObject questionpanel4;
+    public GameObject questionpanel2panel1;
+    public GameObject questionpanel2panel2;
+    public GameObject questionpanel2panel3;
+    public GameObject questionpanel2panel4;
+    public GameObject questionpanel2panel5;
+    public GameObject questionpanel2panel6;
+    public GameObject questionpanel2panel7;
+    public GameObject questionpanel2panel8;
+    public GameObject questionpanel11;
+    public GameObject questionpanel22;
+    public GameObject questionpanel33;
+    public GameObject questionpanel44;
+    public GameObject finishpanel1;
+    public GameObject exitpanel;
+    
     void start()
     {
         gameOverPanel.SetActive(false);
@@ -99,6 +104,28 @@ public class UIManager : MonoBehaviour
         questionpanel4.SetActive(true);
     
     }
+    
+    public void OnLevelQuestion11()
+    {
+        questionpanel11.SetActive(true);
+    
+    }
+    public void OnLevelQuestion22()
+    {
+        questionpanel22.SetActive(true);
+    
+    }
+    public void OnLevelQuestion33()
+    {
+        questionpanel33.SetActive(true);
+    
+    }
+    public void OnLevelQuestion44()
+    {
+        questionpanel44.SetActive(true);
+    
+    }
+
      public void OnLevelQuestion2panel1()
     {
         questionpanel2panel1.SetActive(true);

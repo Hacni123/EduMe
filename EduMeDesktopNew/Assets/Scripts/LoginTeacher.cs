@@ -27,7 +27,7 @@ public class LoginTeacher : MonoBehaviour
     public void OnClickRegister()
     {
         
-            UnityEngine.SceneManagement.SceneManager.LoadScene(5);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
 
     public  IEnumerator LoginUser()
@@ -41,7 +41,7 @@ public class LoginTeacher : MonoBehaviour
         {
               
             UpdateDescription("User logging successfully");
-            UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(8);
         }
         else
         {

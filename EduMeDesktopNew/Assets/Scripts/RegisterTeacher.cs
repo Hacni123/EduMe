@@ -18,7 +18,7 @@ public class RegisterTeacher : MonoBehaviour
     public void OnClickLogin()
     {
         
-            UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(7);
     }
 
     public  IEnumerator Register()
@@ -32,7 +32,7 @@ public class RegisterTeacher : MonoBehaviour
         {
             Debug.Log("User created successfully");
             UpdateDescription("User created successfully");
-             UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+             UnityEngine.SceneManagement.SceneManager.LoadScene(7);
         }
         else
         {

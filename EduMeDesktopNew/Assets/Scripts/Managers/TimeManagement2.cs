@@ -31,7 +31,7 @@ public class TimeManagement2 : MonoBehaviour
 
     public void saveTime()
     {
-        DBManager.time1=3600-countingTime;
+        DBManager.time1=countingTime;
     }
 
 
