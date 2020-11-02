@@ -23,7 +23,13 @@ $namecheck=mysqli_query($con, $namecheckquery) or die("2: Name check query faile
 
 if(mysqli_num_rows($namecheck)>0)
 {
-  echo"3: Name already exists";
+  echo"Name already exists";
+  exit();
+}
+
+if($age>10)
+{
+  echo"You Cannot enroll this game";
   exit();
 }
 

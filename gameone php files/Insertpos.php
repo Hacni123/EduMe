@@ -29,7 +29,7 @@ if(mysqli_num_rows($namecheck)!=1)
   echo"5: Either no user with name, or more than one";
   exit();
 }
-$updatequery="UPDATE players SET players.x ='$x', players.y ='$y',players.z ='$z' WHERE players.username='".$username."';";
+$updatequery="UPDATE players SET players.x_pos1 ='$x', players.y_pos1 ='$y',players.z_pos1 ='$z' WHERE players.username='".$username."';";
 
 
 
