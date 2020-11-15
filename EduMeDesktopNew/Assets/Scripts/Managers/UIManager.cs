@@ -43,7 +43,7 @@ public class UIManager : MonoBehaviour
         if (SoundManager.instance != null)
             SoundManager.instance.PlayButtonPressSound();
             Destroy(gameOverPanel);
-            DBManager.score=0;
+            DBManager.score1=0;
             DBManager.coins=0;
             DBManager.health=3;
             DBManager.x=0;
@@ -51,6 +51,38 @@ public class UIManager : MonoBehaviour
             DBManager.z=0;
             DBManager.time=3600;
             DBManager.time1=4500;
+            DBManager.addition1=0;
+            DBManager.substraction1=0;
+            DBManager.multiplication1=0;
+            DBManager.division1=0;
+            DBManager.addition2=0;
+            DBManager.substraction2=0;
+            DBManager.multiplication2=0;
+            DBManager.division2=0;
+            
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void OnClickRetry2()
+    { 
+        if (SoundManager.instance != null)
+            SoundManager.instance.PlayButtonPressSound();
+            Destroy(gameOverPanel);
+            DBManager.score2=0;
+            DBManager.coins=0;
+            DBManager.health=3;
+            DBManager.x2=0;
+            DBManager.y2=0;
+            DBManager.z2=0;
+            DBManager.time=3600;
+            DBManager.time1=4500;
+            DBManager.addition1=0;
+            DBManager.substraction1=0;
+            DBManager.multiplication1=0;
+            DBManager.division1=0;
+            DBManager.addition2=0;
+            DBManager.substraction2=0;
+            DBManager.multiplication2=0;
+            DBManager.division2=0;
             
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

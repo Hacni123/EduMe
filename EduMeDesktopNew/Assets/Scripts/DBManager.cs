@@ -6,13 +6,25 @@ public class DBManager : MonoBehaviour
 {
     public static string username;
     public static int score;
+    public static int score1;
+    public static int score2;
+    public static int score3;
+    public static int score4;
     public static int coins;
+    public static int diamands;
+     public static int coins2;
+    public static int diamands2;
+    public static int stars2;
     public static float x;
     public static float y;
     public static float z;
+    public static float x2;
+    public static float y2;
+    public static float z2;
     public static int level;
     public static int the_level;
     public static int health;
+    public static int health2;
     public static float time;
     public static float time1;
     public static int addition1;

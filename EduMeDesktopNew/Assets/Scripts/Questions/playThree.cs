@@ -8,7 +8,7 @@ public class playThree : MonoBehaviour, playquestions
 {
 	public string[] soal;
 	public string[] jawaban;
-
+    public Text scoreDisplay;
 	public Text text_soal, text_skor;
 	public InputField input_jawaban;
     public UIManager uIManager;
@@ -45,6 +45,17 @@ public class playThree : MonoBehaviour, playquestions
 				DBManager.score=DBManager.score+30;
 				print(DBManager.score);  
 				Destroy(questionpanel4);	
+				if(DBManager.the_level==1)
+				{
+                   DBManager.score1=DBManager.score1+30;
+				   scoreDisplay.text="Score :" +DBManager.score1;    
+				}
+				else if(DBManager.the_level==2)
+				{
+                   DBManager.score2=DBManager.score2+50;
+				   scoreDisplay.text="Score :" +DBManager.score2;  	  
+				}
+				questionpanel4.SetActive (false);
 			} else 
 			{
 				feed_benar.SetActive (false);

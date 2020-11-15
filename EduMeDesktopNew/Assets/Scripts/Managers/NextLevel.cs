@@ -19,7 +19,19 @@ public class NextLevel : MonoBehaviour {
 	void Update () {
         for (int i = 1; i < max_level; i++)
         {
-            if ( DBManager.score == Coins_To_Unlocked && LevelUnlocked.level == i)
+            if ( DBManager.score1 == Coins_To_Unlocked && LevelUnlocked.level == i)
+            {
+                Next_Level.SetActive(true);
+            }
+            else if ( DBManager.score2 == Coins_To_Unlocked && LevelUnlocked.level == i)
+            {
+                Next_Level.SetActive(true);
+            }
+            else if ( DBManager.score3 == Coins_To_Unlocked && LevelUnlocked.level == i)
+            {
+                Next_Level.SetActive(true);
+            }
+            else if ( DBManager.score4 == Coins_To_Unlocked && LevelUnlocked.level == i)
             {
                 Next_Level.SetActive(true);
             }
@@ -32,12 +44,7 @@ public class NextLevel : MonoBehaviour {
     }
     public void next()
     {
-            DBManager.coins=0;
-            DBManager.health=3;
-            DBManager.x=0;
-            DBManager.y=0;
-            DBManager.z=0;
-             DBManager.time=1400;
+           
         LevelUnlocked.Next_Level();
         SceneManager.LoadScene("LevelSelect");
     }

@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - message
+  - turn
+  - Spike
+  - health
+  - Ground
+  - house1
+  - Coin
+  - friend1
+  - diamand
+  - star
   layers:
   - Default
   - TransparentFX

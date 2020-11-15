@@ -10,8 +10,14 @@ public class getallstudentdetails : MonoBehaviour
     public Text username;
     public Text age;
     public Text score;
+    public Text score1;
+    public Text score2;
+    public Text score3;
+    public Text score4;
     public Text time;
     public Text time1;
+    public Text time2;
+    public Text time3;
     public Text addition1;
     public Text substraction1;
     public Text multiplication1;
@@ -59,20 +65,26 @@ public class getallstudentdetails : MonoBehaviour
         yield return www;
         if(www.text[0]=='0')
         {
+              time2.text="0.00";
+              time3.text="0.00";
              Description.text="Please wait. Data Loading...";  
                username.text=www.text.Split('\t')[1];
                age.text=www.text.Split('\t')[2];
                score.text=www.text.Split('\t')[3];
-               timefirst=float.Parse(www.text.Split('\t')[4]);
-               timesecond=float.Parse(www.text.Split('\t')[5]);
-               add1=int.Parse(www.text.Split('\t')[6]);
-               sub1=int.Parse(www.text.Split('\t')[7]);
-               mul1=int.Parse(www.text.Split('\t')[8]);
-               div1=int.Parse(www.text.Split('\t')[9]);
-               add2=int.Parse(www.text.Split('\t')[10]);
-               sub2=int.Parse(www.text.Split('\t')[11]);
-               mul2=int.Parse(www.text.Split('\t')[12]);
-               div2=int.Parse(www.text.Split('\t')[13]);
+               score1.text=www.text.Split('\t')[4];
+               score2.text=www.text.Split('\t')[5];
+               score3.text=www.text.Split('\t')[6];
+               score4.text=www.text.Split('\t')[7];
+               timefirst=float.Parse(www.text.Split('\t')[8]);
+               timesecond=float.Parse(www.text.Split('\t')[9]);
+               add1=int.Parse(www.text.Split('\t')[10]);
+               sub1=int.Parse(www.text.Split('\t')[11]);
+               mul1=int.Parse(www.text.Split('\t')[12]);
+               div1=int.Parse(www.text.Split('\t')[13]);
+               add2=int.Parse(www.text.Split('\t')[14]);
+               sub2=int.Parse(www.text.Split('\t')[15]);
+               mul2=int.Parse(www.text.Split('\t')[16]);
+               div2=int.Parse(www.text.Split('\t')[17]);
                if(timefirst==0 || timesecond==0)
                {
                    time.text="0";
@@ -171,8 +183,14 @@ public class getallstudentdetails : MonoBehaviour
            username.text=" ";
            age.text=" ";
            score.text=" ";
+           score1.text=" ";
+           score2.text=" ";
+           score3.text=" ";
+           score4.text=" ";
            time.text=" ";
            time1.text=" ";
+           time2.text=" ";
+           time3.text=" ";
            addition1.text=" ";
            substraction1.text=" ";
            multiplication1.text=" ";
@@ -211,7 +229,18 @@ public class getallstudentdetails : MonoBehaviour
         yield return www;
         if(www.text[0]=='0')
         {
-            Debug.Log("Data Reset");  
+           resetpanel.SetActive(false);
+           username.text=" ";
+           age.text=" ";
+           score.text=" ";
+           time.text=" ";
+           time1.text=" ";
+           addition1.text=" ";
+           substraction1.text=" ";
+           multiplication1.text=" ";
+           division1.text=" ";
+           Description.text =" ";
+           Debug.Log("Data Reset");  
         }
         else
         {

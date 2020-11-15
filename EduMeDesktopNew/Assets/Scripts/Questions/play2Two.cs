@@ -23,9 +23,16 @@ public class play2Two : MonoBehaviour
 				feed_salah.SetActive (false);
 				feed_benar.SetActive (true);
             correctAnswer.SetActive (false);   
-				DBManager.score=DBManager.score+30;
-				playerDisplay.text="Player :" +DBManager.username;
-            scoreDisplay.text="Score :" +DBManager.score;	
+				if(DBManager.the_level==1)
+				{
+               DBManager.score1=DBManager.score1+30;
+				   scoreDisplay.text="Score :" +DBManager.score1;    
+				}
+				else if(DBManager.the_level==2)
+				{
+               DBManager.score2=DBManager.score2+50;
+				   scoreDisplay.text="Score :" +DBManager.score2;    
+				}
             DBManager.multiplication1+=1; 
 			} else 
          {

@@ -7,8 +7,16 @@ public class Player2 : PlayerController
     public override void Start()
      {
         base.Start();
-        transform.position = new Vector3(DBManager.x,DBManager.y,DBManager.z);
-        SavePosition();
+       if(DBManager.the_level==1)
+				{
+                transform.position = new Vector3(DBManager.x,DBManager.y,DBManager.z); 
+                 SavePosition();  
+				}
+		else if(DBManager.the_level==2)
+				{
+               transform.position = new Vector3(DBManager.x2,DBManager.y2,DBManager.z2);
+               SavePosition2(); 
+				}
      }
       public override void Awake()
      {
@@ -32,6 +40,12 @@ public class Player2 : PlayerController
     {
         StartCoroutine(base.SavePlayerData());
         StartCoroutine(base.SavePosition());
+
+    }
+    public void CallSaveData2()
+    {
+        StartCoroutine(base.SavePlayerData2());
+        StartCoroutine(base.SavePosition2());
 
     }
     

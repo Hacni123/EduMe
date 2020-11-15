@@ -8,7 +8,7 @@ public class playOne : MonoBehaviour, playquestions
 {
 	public string[] soal;
 	public string[] jawaban;
-
+    public Text scoreDisplay;
 	public Text text_soal, text_skor;
 	public InputField input_jawaban;
     public UIManager uIManager;
@@ -42,9 +42,18 @@ public class playOne : MonoBehaviour, playquestions
 			if (input_jawaban.text == jawaban [nomor_soal]) {
 				feed_benar.SetActive (true);
 				feed_salah.SetActive (false);
-				DBManager.score=DBManager.score+30;
-				print(DBManager.score);
-				Destroy(questionpanel2);	
+				if(DBManager.the_level==1)
+				{
+                   DBManager.score1=DBManager.score1+30;
+				   scoreDisplay.text="Score :" +DBManager.score1;    
+				}
+				else if(DBManager.the_level==2)
+				{
+                   DBManager.score2=DBManager.score2+50;
+				   scoreDisplay.text="Score :" +DBManager.score2;  	  
+				}
+				questionpanel2.SetActive (false);
+					
 			} else 
 			{
 				feed_benar.SetActive (false);

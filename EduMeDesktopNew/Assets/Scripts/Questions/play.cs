@@ -10,6 +10,7 @@ public class play : MonoBehaviour, playquestions
 	public string[] jawaban;
 
 	public Text text_soal, text_skor;
+	public Text scoreDisplay;
 	public InputField input_jawaban;
     public UIManager uIManager;
 	public GameObject feed_benar, feed_salah;
@@ -42,10 +43,19 @@ public class play : MonoBehaviour, playquestions
 			 {
 				feed_benar.SetActive (true);
 				feed_salah.SetActive (false);
-				DBManager.score=DBManager.score+30;
-				print(DBManager.score);  
-				Destroy(questionpanel);	
-			 } else
+				if(DBManager.the_level==1)
+				{
+                   DBManager.score1=DBManager.score1+30;
+				   scoreDisplay.text="Score :" +DBManager.score1;    
+				}
+				else if(DBManager.the_level==2)
+				{
+                   DBManager.score2=DBManager.score2+50;
+				   scoreDisplay.text="Score :" +DBManager.score2;  	  
+				}
+				questionpanel.SetActive (false);
+			 }
+			  else
 			 {
 				feed_benar.SetActive (false);
 				feed_salah.SetActive (true);

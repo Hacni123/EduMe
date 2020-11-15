@@ -34,15 +34,27 @@ public class Login : MonoBehaviour
         {
                DBManager.username=nameField.text;
                DBManager.score=int.Parse(www.text.Split('\t')[1]);
-               DBManager.coins=int.Parse(www.text.Split('\t')[2]);
-               DBManager.x=float.Parse(www.text.Split('\t')[3]);
-               DBManager.y=float.Parse(www.text.Split('\t')[4]);
-               DBManager.z=float.Parse(www.text.Split('\t')[5]);
-               DBManager.level=int.Parse(www.text.Split('\t')[6]);
-               DBManager.the_level=int.Parse(www.text.Split('\t')[7]);
-               DBManager.health=int.Parse(www.text.Split('\t')[8]);
-               DBManager.time=float.Parse(www.text.Split('\t')[9]);
-               DBManager.time1=float.Parse(www.text.Split('\t')[10]);
+               DBManager.score1=int.Parse(www.text.Split('\t')[2]);
+               DBManager.score2=int.Parse(www.text.Split('\t')[3]);
+               DBManager.score3=int.Parse(www.text.Split('\t')[4]);
+               DBManager.score4=int.Parse(www.text.Split('\t')[5]);
+               DBManager.coins=int.Parse(www.text.Split('\t')[6]);
+               DBManager.diamands=int.Parse(www.text.Split('\t')[7]);
+               DBManager.coins2=int.Parse(www.text.Split('\t')[8]);
+               DBManager.diamands2=int.Parse(www.text.Split('\t')[9]);
+               DBManager.stars2=int.Parse(www.text.Split('\t')[10]);
+               DBManager.x=float.Parse(www.text.Split('\t')[11]);
+               DBManager.y=float.Parse(www.text.Split('\t')[12]);
+               DBManager.z=float.Parse(www.text.Split('\t')[13]);
+               DBManager.x2=float.Parse(www.text.Split('\t')[14]);
+               DBManager.y2=float.Parse(www.text.Split('\t')[15]);
+               DBManager.z2=float.Parse(www.text.Split('\t')[16]);
+               DBManager.level=int.Parse(www.text.Split('\t')[17]);
+               DBManager.the_level=int.Parse(www.text.Split('\t')[18]);
+               DBManager.health=int.Parse(www.text.Split('\t')[19]);
+               DBManager.health2=int.Parse(www.text.Split('\t')[20]);
+               DBManager.time=float.Parse(www.text.Split('\t')[21]);
+               DBManager.time1=float.Parse(www.text.Split('\t')[22]);
                UpdateDescription("User logging successfully");
                UnityEngine.SceneManagement.SceneManager.LoadScene(2);
         }
