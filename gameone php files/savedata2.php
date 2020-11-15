@@ -13,12 +13,13 @@ if ($con->connect_error) {
 
 $username= $_POST["name"];
 $newscore= $_POST["score"];
-$newscore1= $_POST["score1"];
-$coins= $_POST["coins"];
-$diamands= $_POST["diamands"];
+$newscore2= $_POST["score2"];
+$coins2= $_POST["coins2"];
+$diamands2= $_POST["diamands2"];
+$stars2= $_POST["stars2"];
 $level= $_POST["level"];
 $the_level= $_POST["the_level"];
-$health= $_POST["health"];
+$health= $_POST["health2"];
 $time= $_POST["time"];
 $time1= $_POST["time1"];
 $addition= $_POST["addition1"];
@@ -46,7 +47,7 @@ if(mysqli_num_rows($namecheck)!=1)
 }
 
 
-$updatequery="UPDATE score_board  JOIN players ON score_board.player_id = players.id SET score_board.score ='$newscore',score_board.score1 ='$newscore1',score_board.coins ='$coins',score_board.diamands ='$diamands',players.health  ='$health',players.time  ='$time',players.time1  ='$time1',players.level_id ='$level',players.the_level  ='$the_level',players.additionright  ='$addition',players.substractionright  ='$substraction1',players.multiplicationright  ='$multiplication1',players.divisionright  ='$division1',players.additionwrong  ='$addition2',players.substractionwrong  ='$substraction2',players.multiplicationwrong ='$multiplication2',players.divisionwrong ='$division2' WHERE players.username='".$username."';";
+$updatequery="UPDATE score_board  JOIN players ON score_board.player_id = players.id SET score_board.score ='$newscore',score_board.score2 ='$newscore2',score_board.coins2 ='$coins2',score_board.diamands2 ='$diamands2',score_board.stars2 ='$stars2',players.health2  ='$health',players.time  ='$time',players.time1  ='$time1',players.level_id ='$level',players.the_level  ='$the_level',players.additionright  ='$addition',players.substractionright  ='$substraction1',players.multiplicationright  ='$multiplication1',players.divisionright  ='$division1',players.additionwrong  ='$addition2',players.substractionwrong  ='$substraction2',players.multiplicationwrong ='$multiplication2',players.divisionwrong ='$division2' WHERE players.username='".$username."';";
 mysqli_query($con,$updatequery) or die("7:Save query failed");
 echo "0";
 

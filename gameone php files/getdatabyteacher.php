@@ -14,7 +14,7 @@
     die("Connection failed: " . mysqli_connect_error());
   }
     
-    $query ="SELECT score_board.score,players.username,players.time,players.age FROM score_board INNER JOIN players ON score_board.player_id=players.id "; 
+    $query ="SELECT score_board.score,players.username,players.time,players.age FROM score_board INNER JOIN players ON score_board.player_id=players.id ORDER by `score` DESC"; 
     $result = mysqli_query($conn, $query);
 
     $student_data=array();
